@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<crossroad>
+    <segment street="Lomonosov"  angle="0" crosswalk="1">
+        <lights>
+             main
+             walk
+        </lights>
+        <lane width="3" type="a" direction="i" availa="l,r,f,b" light="0" stop="0"/>
+        <lane width="3" type="a" direction="o" availa="l,r,f,b" light="0" stop="0"/>
+    </segment>
+    <segment street="Lomonosov"  angle="180" crosswalk="1">
+        <lights>
+             main
+             walk
+        </lights>
+        <lane width="3" type="a" direction="i" availa="l,r,f,b" light="0" stop="0"/>
+        <lane width="3" type="a" direction="o" availa="l,r,f,b" light="0" stop="0"/>
+    </segment>
+</crossroad>
