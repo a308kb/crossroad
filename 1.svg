@@ -1,0 +1,119 @@
+<svg viewBox="-30 -30 60 60" xmlns="http://www.w3.org/2000/svg">
+<g id="crossroad" transform="rotate(30.0 0 0)">
+<g id="l_asphalt">
+<polygon points="10.863961030678919,4.5 -3.363961030678928,3.0 -9.363961030678926,-3.0 1.8639610306789267,-4.5 " fill="darkgray"/>
+<g transform="rotate(0.0 0 0)">
+<polygon points="1.8639610306789267,-4.5 30.86396103067892,-4.5 30.86396103067892,4.5 10.863961030678919,4.5" fill="darkgray"/>
+</g>
+<g transform="rotate(45.0 0 0)">
+<polygon points="10.863961030678922,-4.5 30.863961030678922,-4.5 30.863961030678922,4.5 -0.2573593128807148,4.5" fill="darkgray"/>
+</g>
+<g transform="rotate(180.0 0 0)">
+<polygon points="3.363961030678928,-3.0 29.363961030678926,-3.0 29.363961030678926,3.0 9.363961030678926,3.0" fill="darkgray"/>
+</g>
+<g transform="rotate(225.0 0 0)">
+<polygon points="8.742640687119286,-4.5 28.742640687119284,-4.5 28.742640687119284,4.5 1.863961030678928,4.5" fill="darkgray"/>
+</g>
+</g>
+<g id="l_marks">
+<g transform="rotate(0.0 0 0)">
+<line x1="1.8639610306789267" x2="30.86396103067892" y1="-4.5" y2="-4.5" style="stroke: #ffffff; stroke-width: 0.1;"/>
+ <line x1="15.863961030678919" x2="15.863961030678919" y1="-4.5" y2="4.5" style="stroke: white; stroke-width: 3; stroke-dasharray: 0.5 0.5;"/>
+ <line x1="10.863961030678919" x2="30.86396103067892" y1="-1.5" y2="-1.5" style="stroke: #ffffff; stroke-width: 0.1; stroke-dasharray: 0.7 0.3;"/>
+<line x1="10.863961030678919" x2="30.86396103067892" y1="1.4" y2="1.4" style="stroke: #ffffff; stroke-width: 0.1;"/>
+<line x1="10.863961030678919" x2="30.86396103067892" y1="1.6" y2="1.6" style="stroke: #ffffff; stroke-width: 0.1;"/>
+<line x1="10.863961030678919" x2="30.86396103067892" y1="4.5" y2="4.5" style="stroke: #ffffff; stroke-width: 0.1;"/>
+</g>
+<g transform="rotate(45.0 0 0)">
+<line x1="10.863961030678922" x2="30.863961030678922" y1="-4.5" y2="-4.5" style="stroke: #ffffff; stroke-width: 0.1;"/>
+ <line x1="15.863961030678922" x2="15.863961030678922" y1="-4.5" y2="4.5" style="stroke: white; stroke-width: 3; stroke-dasharray: 0.5 0.5;"/>
+ <line x1="-0.2573593128807148" x2="30.863961030678922" y1="4.5" y2="4.5" style="stroke: #ffffff; stroke-width: 0.1;"/>
+</g>
+<g transform="rotate(180.0 0 0)">
+<line x1="3.363961030678928" x2="29.363961030678926" y1="-3.0" y2="-3.0" style="stroke: #ffffff; stroke-width: 0.1;"/>
+ <line x1="14.363961030678926" x2="14.363961030678926" y1="-3.0" y2="3.0" style="stroke: white; stroke-width: 3; stroke-dasharray: 0.5 0.5;"/>
+ <line x1="9.363961030678926" x2="29.363961030678926" y1="-0.1" y2="-0.1" style="stroke: #ffffff; stroke-width: 0.1;"/>
+<line x1="9.363961030678926" x2="29.363961030678926" y1="0.1" y2="0.1" style="stroke: #ffffff; stroke-width: 0.1;"/>
+<line x1="9.363961030678926" x2="29.363961030678926" y1="3.0" y2="3.0" style="stroke: #ffffff; stroke-width: 0.1;"/>
+</g>
+<g transform="rotate(225.0 0 0)">
+<line x1="8.742640687119286" x2="28.742640687119284" y1="-4.5" y2="-4.5" style="stroke: #ffffff; stroke-width: 0.1;"/>
+ <line x1="13.742640687119286" x2="13.742640687119286" y1="-4.5" y2="4.5" style="stroke: white; stroke-width: 3; stroke-dasharray: 0.5 0.5;"/>
+ <line x1="1.863961030678928" x2="28.742640687119284" y1="4.5" y2="4.5" style="stroke: #ffffff; stroke-width: 0.1;"/>
+</g>
+</g>
+<g id="l_rr">
+<g transform="rotate(0.0 0 0)">
+</g>
+<g transform="rotate(45.0 0 0)">
+<line x1="10.863961030678922" x2="30.863961030678922" y1="0.0" y2="0.0" style="stroke: brown; stroke-dasharray: 0.2 0.5; stroke-width: 2.7"/>
+<line x1="10.863961030678922" x2="30.863961030678922" y1="-0.8999999999999999" y2="-0.8999999999999999" style="stroke: gray; stroke-width: 0.2;"/>
+<line x1="10.863961030678922" x2="30.863961030678922" y1="0.8999999999999999" y2="0.8999999999999999" style="stroke: gray; stroke-width: 0.2;"/>
+</g>
+<g transform="rotate(180.0 0 0)">
+</g>
+<g transform="rotate(225.0 0 0)">
+<line x1="10.242640687119286" x2="27.242640687119284" y1="0.0" y2="0.0" style="stroke: #006600; stroke-linecap: round; stroke-width: 3.0"/>
+</g>
+</g>
+<g id="l_lights">
+<g transform="rotate(0.0 0 0)">
+<g transform="translate(14.863961030678919,-5.5)">
+<circle cx="3" cy="0" r="0.5" fill="green" /><circle cx="2" cy="0" r="0.5" fill="yellow" /><circle cx="1" cy="0" r="0.5" fill="red" /></g>
+</g>
+<g transform="rotate(45.0 0 0)">
+<g transform="translate(14.863961030678922,-5.5)">
+<circle cx="3" cy="0" r="0.5" fill="green" /><circle cx="2" cy="0" r="0.5" fill="yellow" /><circle cx="1" cy="0" r="0.5" fill="red" /></g>
+</g>
+<g transform="rotate(180.0 0 0)">
+<g transform="translate(13.363961030678926,-4.0)">
+</g>
+</g>
+<g transform="rotate(225.0 0 0)">
+<g transform="translate(12.742640687119286,-5.5)">
+<circle cx="3" cy="0" r="0.5" fill="green" /><circle cx="2" cy="0" r="0.5" fill="yellow" /><circle cx="1" cy="0" r="0.5" fill="red" /></g>
+</g>
+</g>
+<g id="l_availa">
+<g transform="rotate(0.0 0 0)">
+<g transform="translate(10.863961030678919,-3.0) scale(0.16)"><polygon points="0,0 6,3 6,1 20,1 20,-1 6,-1 6,-3" fill="white"/>
+<polygon points="10,-7 13,-4 11,-4 12,-1 20,-1 20,1 11,1 9,-4 7,-4" fill="white"/>
+</g>
+<g transform="translate(10.863961030678919,0.0) scale(0.16)"><polygon points="0,0 6,3 6,1 20,1 20,-1 6,-1 6,-3" fill="white"/>
+<polygon points="10,7 13,4 11,4 12,1 20,1 20,-1 11,-1 9,4 7,4" fill="white"/>
+</g>
+</g>
+<g transform="rotate(45.0 0 0)">
+<g transform="translate(10.863961030678922,-3.0) scale(0.16)"><polygon points="0,0 6,3 6,1 20,1 20,-1 6,-1 6,-3" fill="white"/>
+<polygon points="10,7 13,4 11,4 12,1 20,1 20,-1 11,-1 9,4 7,4" fill="white"/>
+<polygon points="10,-7 13,-4 11,-4 12,-1 20,-1 20,1 11,1 9,-4 7,-4" fill="white"/>
+</g>
+</g>
+<g transform="rotate(180.0 0 0)">
+<g transform="translate(9.363961030678926,-1.5) scale(0.16)"><polygon points="10,7 13,4 11,4 12,1 20,1 20,-1 11,-1 9,4 7,4" fill="white"/>
+<polygon points="10,-7 13,-4 11,-4 12,-1 20,-1 20,1 11,1 9,-4 7,-4" fill="white"/>
+</g>
+</g>
+<g transform="rotate(225.0 0 0)">
+<g transform="translate(8.742640687119286,-3.0) scale(0.16)"><polygon points="0,0 6,3 6,1 20,1 20,-1 6,-1 6,-3" fill="white"/>
+<polygon points="10,7 13,4 11,4 12,1 20,1 20,-1 11,-1 9,4 7,4" fill="white"/>
+<polygon points="10,-7 13,-4 11,-4 12,-1 20,-1 20,1 11,1 9,-4 7,-4" fill="white"/>
+</g>
+</g>
+</g>
+<g id="l_names">
+<g transform="rotate(0.0 0 0)">
+<text x="20.86396103067892" y="0" fill="black" font-size="1">Lomonosov </text>
+</g>
+<g transform="rotate(45.0 0 0)">
+<text x="20.863961030678922" y="0" fill="black" font-size="1">Pioner </text>
+</g>
+<g transform="rotate(180.0 0 0)">
+<text x="19.363961030678926" y="0" fill="black" font-size="1">Lomonosov2 </text>
+</g>
+<g transform="rotate(225.0 0 0)">
+<text x="18.742640687119284" y="0" fill="black" font-size="1">P2 </text>
+</g>
+</g>
+</g>
+</svg>
