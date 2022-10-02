@@ -1,6 +1,4 @@
-from crossroads import Crossroad, Segment, Lane
-from shapely.geometry import Point, LineString
-from shapely import affinity
+from crossroads import Crossroad  # , Segment, Lane
 
 
 def cr_paint(cr: Crossroad) -> str:

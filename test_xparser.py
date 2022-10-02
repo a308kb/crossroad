@@ -1,7 +1,7 @@
-from xparser import *
-from crossroads import *
+from xparser import parse
+# from crossroads import *
 
-xml="""<?xml version="1.0" encoding="utf-8" ?>
+xml = """<?xml version="1.0" encoding="utf-8" ?>
 <crossroad angle="30">
     <segment street="Lomonosov"  angle="0" crosswalk="1" lights="m,w">
         <lane width="3" type="a" direction="i" availa="l,f,b" light="0" stop="0"/>
@@ -26,8 +26,5 @@ xml="""<?xml version="1.0" encoding="utf-8" ?>
 
 
 def test_parse():
-    cr=parse(xml)
+    cr = parse(xml)
     assert cr.angle == 30
-
-
-

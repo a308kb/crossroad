@@ -1,6 +1,5 @@
 import crossroads
 from bs4 import BeautifulSoup as Soup
-import lxml
 
 
 def parse(xml: str) -> crossroads.Crossroad:
@@ -12,7 +11,7 @@ def parse(xml: str) -> crossroads.Crossroad:
     cr = crossroads.Crossroad()
     s = Soup(xml, "xml")
     root = s.crossroad
-    cr.angle=float(root.get("angle", 0))
+    cr.angle = float(root.get("angle", 0))
     if not root:
         return cr
     cr.segments = []

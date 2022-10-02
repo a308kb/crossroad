@@ -1,4 +1,4 @@
-from shapely.geometry import Point, LineString
+from shapely.geometry import LineString  # , Point
 from shapely import affinity
 
 
@@ -57,13 +57,13 @@ class Segment:
         return ip
 
 
-class CrosroadStyle:
+class CrossroadStyle:
     """
     Задает параметры отображения перекрестка
     """
-    viewBox="-30 -30 60 60"
+    viewBox = "-30 -30 60 60"
     segments_length = 20
-#    lane_auto = "stroke: #000000;"
+    #    lane_auto = "stroke: #000000;"
     asphalt_color = "darkgray"
     lane_median_strip = "stroke: #006600; stroke-linecap: round;"
     double_line_distance = 0.2
@@ -73,13 +73,15 @@ class CrosroadStyle:
     rails_gauge = 0.6  # Расстояние между рельсами - Доля ширины полосы
     rails_sleeper_style = "stroke: brown; stroke-dasharray: 0.2 0.5;"
     rails_style = "stroke: gray; stroke-width: 0.2;"
-    crosswalk_margin= 5
-    crosswalk_style="stroke: white; stroke-width: 3; stroke-dasharray: 0.5 0.5;"
+    crosswalk_margin = 5
+    crosswalk_style = "stroke: white; stroke-width: 3; stroke-dasharray: 0.5 0.5;"
+
 
 """    rails_color = -1
     median_strip_color = 255
     background_color = 255
 """
+
 
 class Crossroad:
     """
@@ -87,14 +89,14 @@ class Crossroad:
     Содержит список сегментов и стили
     """
     segments = []
-    style = CrosroadStyle()
-    central_area=[]
-    angle=0
+    style = CrossroadStyle()
+    central_area = []
+    angle = 0
 
     def recalc(self):
-        sgs=self.segments
+        sgs = self.segments
         sgs.sort(key=lambda x: x.angle)
         for sg in sgs: sg.calc_width()
-        self.central_area=[]
+        self.central_area = []
         for i in range(len(sgs)):
             self.central_area.append(sgs[i].calc_cusp(sgs[0 if i == len(sgs) - 1 else i + 1]))
