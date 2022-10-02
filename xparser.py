@@ -4,6 +4,11 @@ import lxml
 
 
 def parse(xml: str) -> crossroads.Crossroad:
+    """
+    разбирает xml , заполняет структуры данных
+    :param xml:
+    :return: Crossroad
+    """
     cr = crossroads.Crossroad()
     s = Soup(xml, "xml")
     root = s.crossroad

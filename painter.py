@@ -4,6 +4,11 @@ from shapely import affinity
 
 
 def cr_paint(cr: Crossroad) -> str:
+    """
+    Создает svg
+    :param cr:
+    :return: svg
+    """
     cr.recalc()
     svg = f'<svg viewBox="{cr.style.viewBox}" xmlns="http://www.w3.org/2000/svg">\n'  # viewBox="0 0 6 4"
     svg += f'<g id="crossroad" transform="rotate({cr.angle} 0 0)">\n'
