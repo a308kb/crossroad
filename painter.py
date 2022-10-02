@@ -31,7 +31,8 @@ def cr_paint(cr: Crossroad) -> str:
                              f'fill="{cr.style.asphalt_color}"/>\n'
         layers["names"] += f'<text x="{x + cr.style.segments_length / 2}" y="0" fill="black" ' \
                            f'font-size="{1}">{sg.street} </text>\n'
-        layers["lights"] += f'<g transform="translate({x+4},{y-1})">\n'
+
+        layers["lights"] += f'<g transform="translate({x + 4},{y - 1})">\n'
         if sg.lights.find("m") > -1:
             layers["lights"] += '<circle cx="3" cy="0" r="0.5" fill="green" />' \
                                 '<circle cx="2" cy="0" r="0.5" fill="yellow" />' \
@@ -43,16 +44,17 @@ def cr_paint(cr: Crossroad) -> str:
             layers["marks"] += f'<line x1="{x + cr.style.crosswalk_margin}" x2="{x + cr.style.crosswalk_margin}" ' \
                                f'y1="{y}" y2="{-y}" ' \
                                f'style="{cr.style.crosswalk_style}"/>\n '
+
         previous_direction = ""
         for ln in sg.lanes:
 
-            if ln.type == "d":
+            if ln.type == "d":  # разделительная полоса
                 y += ln.width / 2
                 layers["rr"] += f'<line x1="{x + ln.width / 2}" x2="{x2 - ln.width / 2}" y1="{y}" y2="{y}" ' \
                                 f'style="{cr.style.lane_median_strip} stroke-width: {ln.width}"/>\n'
                 y += ln.width / 2
                 previous_direction = ""
-            elif ln.type == "t":
+            elif ln.type == "t":  # рельсы
                 y += ln.width / 2
                 # шпалы
                 layers["rr"] += f'<line x1="{x}" x2="{x2}" y1="{y}" y2="{y}" style="{cr.style.rails_sleeper_style} ' \
@@ -81,7 +83,7 @@ def cr_paint(cr: Crossroad) -> str:
                                        f'style="{cr.style.line_style}"/>\n'
 
                 y += ln.width / 2
-
+                #  Стрелки разрешенных направлений
                 if ln.direction == "r" or ln.direction == "i":
                     layers["availa"] += f'<g transform="translate({x},{y}) scale(0.16)">'
                     if ln.availa.find("f") > -1:
