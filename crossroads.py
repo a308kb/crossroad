@@ -96,7 +96,8 @@ class Crossroad:
     def recalc(self):
         sgs = self.segments
         sgs.sort(key=lambda x: x.angle)
-        for sg in sgs: sg.calc_width()
+        for sg in sgs:
+            sg.calc_width()
         self.central_area = []
         for i in range(len(sgs)):
             self.central_area.append(sgs[i].calc_cusp(sgs[0 if i == len(sgs) - 1 else i + 1]))

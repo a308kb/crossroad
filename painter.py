@@ -16,7 +16,7 @@ def cr_paint(cr: Crossroad) -> str:
         layers[key] += f'<g id="l_{key}">\n'
 
     # асфальтирую центр перекрестка
-    layers["asphalt"] += f'<polygon points="'
+    layers["asphalt"] += '<polygon points="'
     for p in cr.central_area:
         layers["asphalt"] += f'{p.x},{p.y} '
     layers["asphalt"] += f'" fill="{cr.style.asphalt_color}"/>\n'
@@ -98,8 +98,7 @@ def cr_paint(cr: Crossroad) -> str:
                     if ln.availa.find("l") > -1:
                         layers["availa"] += '<polygon points="10,-7 13,-4 11,-4 12,-1 20,-1 20,1 11,1 9,-4 7,-4" ' \
                                             'fill="white"/>\n'
-                    layers["availa"] += f'</g>\n'
-                # svg += f'<line x1="{x}" x2="{x2}" y1="{y}" y2="{y}" style="{cr.style.lane_auto} stroke-width: {ln.width}"/>\n'
+                    layers["availa"] += '</g>\n'
                 y += ln.width / 2
 
                 previous_direction = ln.direction

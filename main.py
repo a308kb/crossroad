@@ -1,7 +1,7 @@
 import painter
 import xparser
 
-xml="""<?xml version="1.0" encoding="utf-8" ?>
+xml = """<?xml version="1.0" encoding="utf-8" ?>
 <crossroad angle="30">
     <segment street="Lomonosov"  angle="0" crosswalk="1" lights="m,w">
         <lane width="3" type="a" direction="i" availa="l,f,b" light="0" stop="0"/>
@@ -24,14 +24,11 @@ xml="""<?xml version="1.0" encoding="utf-8" ?>
     </segment>
 </crossroad>"""
 
-
-
 if __name__ == '__main__':
     cr = xparser.parse(xml)
     svg = painter.cr_paint(cr)
 
-    fil = open("1.svg","w")
+    fil = open("1.svg", "w")
     fil.write(svg)
     fil.close()
     print(svg)
-
